@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	
+	<body>
+		<!--在一个大型应用中，有必要将整个应用程序划分为组件，以使开发可管理。
+		在后续教程中我们将详述组件，不过这里有一个（假想的）使用了组件的应用模板是什么样的例子：-->
+		<!--<div id="app">
+		  <app-nav></app-nav>
+		  <app-view>
+		    <app-sidebar></app-sidebar>
+		    <app-content></app-content>
+		  </app-view>
+		</div>-->
+		<div id="app-7">
+		  <ol>
+		    <!-- 现在我们为每个todo-item提供待办项对象    -->
+		    <!-- 待办项对象是变量，即其内容可以是动态的 -->
+		    <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+		  </ol>
+		</div>
+	</body>
+	
+	<script type="text/javascript" src="js/vue-component.js" ></script>
+</html>
